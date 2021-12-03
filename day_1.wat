@@ -44,12 +44,10 @@
         i32.load
         local.set $previous
         ;; Jump to beginning of the loop
-        br $loop
-      )
-    )
+        br $loop))
+
     ;; Return the value inside the $increases local
-    local.get $increases
-  )
+    local.get $increases)
 
   (func (export "part_2") (result i32)
     (local $i i32)
@@ -119,11 +117,9 @@
         local.get $current
         local.set $previous
         ;; Jump to beginning of the loop
-        br $loop
-      )
-    )
+        br $loop))
+
     ;; Return the value inside the $increases local
-    local.get $increases
-  )
+    local.get $increases)
 
   (data (i32.const 0) "\c7\00\00\00\c8\00\00\00\d0\00\00\00\d2\00\00\00\c8\00\00\00\cf\00\00\00\f0\00\00\00\0d\01\00\00\04\01\00\00\07\01\00\00"))
