@@ -59,7 +59,7 @@
       (block $loop_bits_break
         (loop $loop_bits
           ;; If bit $j is set more times than the number
-          ;; of iteration add it to $gamma.
+          ;; of iterations add it to $gamma.
           local.get $j
           call $count
           ;; Convert the value to a f32
@@ -70,10 +70,9 @@
           i32.sub
           i32.const 2
           i32.div_u
-          ;; Convert the value to f32
           f32.convert_i32_u
           f32.div
-          ;; If the division is greather than 1 set the bit
+          ;; If the division is greater than 0.5 set the bit
           f32.const 0.5
           f32.gt
           (if (then
